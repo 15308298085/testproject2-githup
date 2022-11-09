@@ -25,10 +25,10 @@ $("#ebooks-banner").tyslide({
     controlsH: 2,//控制按钮高度
     controlsColor: "#d7d7d7",//普通控制按钮的颜色
     controlsCurrentColor: "#00ff00",//当前控制按钮的颜色
-    
+
 });
 // 新书列表手风琴效果
-$(".ebooks .right-box ul > li").mouseenter(function(){
+$(".ebooks .right-box ul > li").mouseenter(function () {
     $(this).siblings().find('.desc').hide();
     $(this).siblings().find('.ebooks-title').show();
     $(this).find('.ebooks-title').hide();
@@ -47,6 +47,7 @@ $("#fz").tyslide({
     controlsColor: "#d7d7d7",//普通控制按钮的颜色
     controlsCurrentColor: "#00ff00",//当前控制按钮的颜色
 })
+// 户外运动table 切换
 $("#yd").tyslide({
     boxh: 350,//盒子的高度
     w: 431,//盒子的宽度
@@ -59,6 +60,7 @@ $("#yd").tyslide({
     controlsColor: "#d7d7d7",//普通控制按钮的颜色
     controlsCurrentColor: "#00ff00",//当前控制按钮的颜色
 })
+// 童装table 切换
 $("#tz").tyslide({
     boxh: 350,//盒子的高度
     w: 431,//盒子的宽度
@@ -72,7 +74,7 @@ $("#tz").tyslide({
     controlsCurrentColor: "#00ff00",//当前控制按钮的颜色
 })
 // 推广商品切换
-$(".promotion .top ul li").mouseenter(function(){
+$(".promotion .top ul li").mouseenter(function () {
     // 导航激活类切换
     $(this).addClass('active').siblings().removeClass('active')
     // 内容切换
@@ -80,5 +82,51 @@ $(".promotion .top ul li").mouseenter(function(){
     console.log(index);
     $('.promotion .bottom .inner-box').animate({
         'left': -index * 1200
+    })
+})
+// 返回顶部
+$(function () {
+    $(document).scroll(function () {
+        var topDistance = $('html,body').scrollTop()
+        if (topDistance > 500) {
+            $('.backtotop').fadeIn();
+        } else {
+            $('.backtotop').fadeOut();
+        }
+    })
+    $('.backtotop').click(function () {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 300)
+    })
+})
+// 二维码划出效果
+$('.qr-code .ticket').hover(function () {
+    // over
+    $('.qr-code div').stop(true).animate({
+        left: '-100px'
+    })
+}, function () {
+    // out
+    $('.qr-code div').stop(true).animate({
+        left: '0'
+    })
+}
+);
+// 顶部搜索框
+$(document).scroll(function(){
+    var top = $('html,body').scrollTop()
+    if(top > 500){
+        $('.top-search-box').slideDown(200);
+    } else {
+        $('.top-search-box').slideUp(200);
+    }
+})
+// 楼梯滑动
+$('.floor li ').click(function(){
+    var index = $(this).index()
+    var topoffset = $('.floorbox').eq(index).offset().top
+    $('html,body').animate({
+        scrollTop:topoffset -50
     })
 })

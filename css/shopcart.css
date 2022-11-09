@@ -1,0 +1,275 @@
+/* 1.顶部 */
+.topbar {
+    height: 28px;
+    background-color: black;
+}
+
+.topbar .container {
+    height: 28px;
+}
+
+.topbar .container p {
+    color: #fff;
+    height: 28px;
+    line-height: 28px;
+}
+
+.topbar .container p:first-child {
+    text-indent: 210px;
+}
+
+.topbar .container p:first-child a {
+    color: #fff;
+}
+
+.topbar .container p:nth-child(2) {
+    margin-right: 10px;
+}
+
+.topbar .container p:nth-child(2) a:not(.login) {
+    color: #ff6700;
+}
+
+.topbar .container p:nth-child(2) .login {
+    color: #fff;
+}
+
+.topbar .container p:first-child a {
+    color: #fff;
+}
+
+/* 2.导航 */
+.nav {
+    height: 85px;
+    background-color: #fff;
+}
+
+.nav .search-shopcart-order {
+    margin-top: 5px;
+    height: 35px;
+}
+
+.nav .search-shopcart-order .shopcart-order {
+    width: 200px;
+    height: 35px;
+    font-size: 0;
+}
+
+.nav .search-shopcart-order .shopcart-order button {
+    width: 100px;
+    height: 35px;
+    color: #333;
+    border: 1px solid #ccc;
+    background-color: #ebebeb;
+
+}
+
+.nav .search-shopcart-order .shopcart-order button:nth-child(1) {
+    background-color: #ff6700;
+    background-image: url(../img/bgicon.png);
+    background-position: -2px -44px;
+}
+
+.nav .search-shopcart-order .search-input {
+    position: relative;
+    margin-right: 40px;
+    width: 440px;
+    height: 35px;
+    border: 2px solid #ff6700;
+    background-color: #ff6700;
+}
+
+.nav .search-shopcart-order .search-input span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 33px;
+    width: 50px;
+    background: url(../img/bgicon.png);
+}
+
+.nav .search-shopcart-order .search-input .search {
+    width: 390px;
+    height: 31px;
+    text-indent: 10px;
+    color: #ccc;
+}
+
+.nav .category-menu {
+    margin-top: 15px;
+    height: 30px;
+}
+
+.nav .category-menu .left-logo {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    background-color: green;
+}
+
+.nav .category-menu .left-logo img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav .category-menu ul {
+    width: 1000px;
+    height: 30px;
+}
+
+.nav .category-menu ul li {
+    float: left;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    line-height: 30px;
+    padding: 0 22px;
+}
+
+.nav .category-menu ul li a:hover {
+    color: #ff6700;
+}
+
+/* 购物车 */
+.shopcart {
+    height: 630px;
+    margin: 30px auto;
+}
+.shopcart h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-indent: 10px;
+    color: #ff6700;
+}
+.shopcart table {
+    width: 1205px;
+    height: 500px;
+    text-align: center;
+}
+
+.shopcart table thead tr th {
+    height: 60px;
+    width: 30px;
+    background-color: #f1f1f1;
+}
+.shopcart table button {
+    width: 20px;
+    height: 20px;
+}
+.shopcart table input {
+    width: 50px;
+    background-color: #ccc;
+}
+.totalPrice {
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.totalPrice .left {
+    float: left;
+}
+
+.totalPrice .left input {
+    margin: 0 15px;
+}
+
+.totalPrice .left span {
+    margin-left: 30px;
+}
+
+.totalPrice .right {
+    float: right;
+
+}
+
+.totalPrice .right span {
+    margin: 0 20px;
+}
+
+.totalPrice .right span:nth-child(2) {
+    font-size: 16px;
+}
+
+.totalPrice .right em {
+    color: #ff6700;
+    margin: 0 10px;
+}
+
+.totalPrice .right button {
+    width: 80px;
+    height: 50px;
+    color: #fff3ee;
+    font-size: 18px;
+    background-color: #ff6700;
+}
+/* 11.尾部 */
+.footer {
+    height: 400px;
+    margin-top: 80px;
+}
+
+.footer .top {
+    height: 80px;
+    line-height: 75px;
+    padding-left: 350px;
+    border-top: 6px solid #ff6700;
+    background-color: #f2f2f2;
+}
+
+.footer .top img {
+    padding: 0 40px;
+}
+
+.footer .bottom {
+    position: relative;
+    height: 320px;
+}
+
+.footer .bottom .jieshao {
+    height: 150px;
+    margin-left: 440px;
+    margin-top: 30px;
+}
+
+.footer .bottom .jieshao dl {
+    float: left;
+    width: 130px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.footer .bottom .jieshao dt {
+    font-size: 18px;
+}
+
+.footer .bottom .jieshao dd {
+    color: #333;
+    margin-top: 5px;
+}
+
+.footer .bottom .wangzhan {
+    height: 30px;
+    margin-left: 420px;
+    margin-top: 10px;
+}
+
+.footer .bottom .wangzhan ul li {
+    float: left;
+    padding: 0 10px;
+}
+
+.footer .bottom p {
+    margin-left: 600px;
+}
+
+.footer .bottom .logo {
+    position: absolute;
+    left: 1200px;
+    top: 15px;
+    background-color: #fff;
+}
