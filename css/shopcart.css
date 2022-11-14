@@ -151,7 +151,7 @@
 
 .shopcart table thead tr th {
     height: 60px;
-    width: 30px;
+    width: 45px;
     background-color: #f1f1f1;
 }
 .shopcart table button {
@@ -160,7 +160,9 @@
 }
 .shopcart table input {
     width: 50px;
-    background-color: #ccc;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
 .totalPrice {
     width: 1200px;

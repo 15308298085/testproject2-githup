@@ -1,19 +1,19 @@
 // 返回顶部功能函数封装
 $(function () {
-    window.gototop = function (options) {
-        var $gototophtml = $(<div class="backtotop">
-            <img src="options.imgUrl" alt="" />
+    window.gotoTop = function (options) {
+        var $gotoTopHtml = $(<div class="backtotop">
+            <img src="${options.imgUrl}" alt="" />
         </div >);
-        $gototophtml.css({
+        $gotoTopHtml.css({
             position: 'fixed',
             left: '610px',
-            bottom: '10px;',
+            bottom: options.bottom,
             width: '30px',
             height: '50px',
             marginLeft: '50%',
-            display: 'none',
+            // display: 'none',
         })
-        {/* 返回顶部 */}
+        /* 返回顶部 */
         $(document).scroll(function () {
             var topDistance = $('html,body').scrollTop()
             if (topDistance > 500) {
@@ -27,7 +27,6 @@ $(function () {
                 scrollTop:0
             },300)
         });
-
-        $('body').append($gototophtml)
+        $('body').append($gotoTopHtml)
     }
 })
