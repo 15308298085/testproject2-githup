@@ -844,7 +844,7 @@
     background-color: #fff;
 }
 /* 返回顶部 */
-/* .backtotop {
+.backtotop {
     position: fixed;
     left: 610px;
     bottom: 10px;;
@@ -856,7 +856,7 @@
 .backtotop img {
     width: 100%;
     height: 100%;
-} */
+}
 /* 二维码 */
 .qr-code {
     position: fixed;

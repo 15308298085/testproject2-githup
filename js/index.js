@@ -84,21 +84,21 @@ $(".promotion .top ul li").mouseenter(function () {
     })
 })
 // 返回顶部
-// $(function () {
-//     $(document).scroll(function () {
-//         var topDistance = $('html,body').scrollTop()
-//         if (topDistance > 500) {
-//             $('.backtotop').fadeIn();
-//         } else {
-//             $('.backtotop').fadeOut();
-//         }
-//     })
-//     $('.backtotop').click(function () {
-//         $('html,body').animate({
-//             scrollTop: 0
-//         }, 300)
-//     })
-// })
+$(function () {
+    $(document).scroll(function () {
+        var topDistance = $('html,body').scrollTop()
+        if (topDistance > 500) {
+            $('.backtotop').fadeIn();
+        } else {
+            $('.backtotop').fadeOut();
+        }
+    })
+    $('.backtotop').click(function () {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 300)
+    })
+})
 // 二维码划出效果
 $('.qr-code .ticket').hover(function () {
     // over
