@@ -11,7 +11,10 @@
     <meta name="Keywords" content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜,乐购" />
     <!-- 引入样式 -->
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/shopcart.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/magnifier.css">
+    <link rel="stylesheet" href="../css/productDetail.css">
     <!-- 初始化 -->
     <link rel="stylesheet" href="../css/base.css">
 </head>
@@ -60,69 +63,58 @@
         </div>
     </div>
 
-    <div class="shopcart container">
-        <h2>全部商品(<i class="goodsCount"></i>)</h2>
-        <table cellspacing="0">
-            <thead>
-                <tr>
-                    <th><input type="checkbox" class="quanxuan">全选</th>
-                    <th>商品</th>
-                    <th>单价</th>
-                    <th>数量</th>
-                    <th>小计</th>
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="one"><input type="checkbox" class="j-checked"></td>
-                    <td><img src="../img/index08_05.jpg" alt="">从你的全世界路过</td>
-                    <td class="price">41.00</td>
-                    <td>
-                        <button class="jian">-</button>
-                        <input type="text" value="1" class="shu">
-                        <button class="jia">+</button>
-                    </td>
-                    <td class="subprice">41.00</td>
-                    <td class="del">删除</td>
-                </tr>
-                <tr>
-                    <td class="one"><input type="checkbox" class="j-checked"></td>
-                    <td><img src="../img/index08_05.jpg" alt="">从你的全世界路过</td>
-                    <td class="price">41.00</td>
-                    <td>
-                        <button class="jian">-</button>
-                        <input type="text" value="1" class="shu">
-                        <button class="jia">+</button>
-                    </td>
-                    <td class="subprice">41.00</td>
-                    <td class="del">删除</td>
-                </tr>
-                <tr>
-                    <td class="one"><input type="checkbox" class="j-checked"></td>
-                    <td><img src="../img/index08_05.jpg" alt="">从你的全世界路过</td>
-                    <td class="price">41.00</td>
-                    <td>
-                        <button class="jian">-</button>
-                        <input type="text" value="1" class="shu">
-                        <button class="jia">+</button>
-                    </td>
-                    <td class="subprice">41.00</td>
-                    <td class="del">删除</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="totalPrice container">
-            <div class="left">
-                <input type="checkbox" class="quanxuan">全选
-                <span class="deleteChecked">删除选中商品</span>
-            </div>
-            <div class="right">
-                <span>已选择<em class="count">0</em>件商品</span>
-                <span>总价<em class="total">41:00</em></span>
-                <button>去结算</button>
+    <div class="product-detail container clearfix">
+        <div class="left-box fl">
+            <!-- 放大镜效果 -->
+            <div class="magnifier" id="magnifier1">
+                <div class="magnifier-container">
+                    <!--当前图片显示容器-->
+                    <div class="images-cover"></div>
+                    <!--跟随鼠标移动的盒子-->
+                    <div class="move-view"></div>
+                </div>
+                <div class="magnifier-assembly">
+                    <div class="magnifier-btn">
+                        <span class="magnifier-btn-left">&lt;</span>
+                        <span class="magnifier-btn-right">&gt;</span>
+                    </div>
+                    <!--按钮组-->
+                    <div class="magnifier-line">
+                        <!--缩略图-->
+                        <ul class="clearfix animation03">
+                            <li>
+                                <div class="small-img">
+                                    <img src="../img/book1.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="../img/book2.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="../img/book3.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="../img/book4.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="../img/book5.jpg" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--经过放大的图片显示容器-->
+                <div class="magnifier-view"></div>
             </div>
         </div>
+        <div class="right-box fr"></div>
     </div>
     <!-- 11.尾部 -->
     <div class="footer">
@@ -194,8 +186,10 @@
         </div>
     </div>
 
+
     <script src="../js/jquery-1.11.0.js"></script>
-    <script src="../js/shopcart.js"></script>
+    <script src="../js/productDetail.js"></script>
+    <script src="../js/magnifier(1).js"></script>
 </body>
 
 </html>

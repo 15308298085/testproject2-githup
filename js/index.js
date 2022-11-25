@@ -79,27 +79,26 @@ $(".promotion .top ul li").mouseenter(function () {
     $(this).addClass('active').siblings().removeClass('active')
     // 内容切换
     var index = $(this).index()
-    console.log(index);
     $('.promotion .bottom .inner-box').animate({
         'left': -index * 1200
     })
 })
 // 返回顶部
-$(function () {
-    $(document).scroll(function () {
-        var topDistance = $('html,body').scrollTop()
-        if (topDistance > 500) {
-            $('.backtotop').fadeIn();
-        } else {
-            $('.backtotop').fadeOut();
-        }
-    })
-    $('.backtotop').click(function () {
-        $('html,body').animate({
-            scrollTop: 0
-        }, 300)
-    })
-})
+// $(function () {
+//     $(document).scroll(function () {
+//         var topDistance = $('html,body').scrollTop()
+//         if (topDistance > 500) {
+//             $('.backtotop').fadeIn();
+//         } else {
+//             $('.backtotop').fadeOut();
+//         }
+//     })
+//     $('.backtotop').click(function () {
+//         $('html,body').animate({
+//             scrollTop: 0
+//         }, 300)
+//     })
+// })
 // 二维码划出效果
 $('.qr-code .ticket').hover(function () {
     // over
