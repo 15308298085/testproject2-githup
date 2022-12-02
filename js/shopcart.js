@@ -35,7 +35,6 @@ $(function(){
         $allPriceInput.prop('checked', flag)
         // 调用计算总价函数
         calcTotalPrice()
-        // $('.total').text(totalPrice.toFixed(2))
     })
     // 数量的加减功能
     // 加
