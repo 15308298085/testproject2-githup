@@ -1,6 +1,6 @@
 .register {
     width: 500px;
-    height: 1000px;
+    height: 500px;
     margin: 30px auto;
 }
 .register h2 {
@@ -12,6 +12,7 @@
 input {
     border: 1px solid black;
 }
+
 .register p input {
     width: 200px;
     height: 20px;

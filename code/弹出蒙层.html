@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/model.css">
     <!-- 初始化 -->
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/register.css">
 </head>
 
 <body>
@@ -44,19 +44,26 @@
             <div class="left-logo fl">
                 <img src="../../img/logo.jpg" alt="乐购">
             </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="#">图书</a></li>
+                    <li><a href="#">电子书</a></li>
+                    <li><a href="#">原创文学</a></li>
+                    <li><a href="#">服装</a></li>
+                    <li><a href="#">户外运动</a></li>
+                    <li><a href="#">孕婴童</a></li>
+                    <li><a href="#">家具</a></li>
+                    <li><a href="#">创意文具</a></li>
+                    <li><a href="#">地方特产</a></li>
+                    <li><a href="#">海外购</a></li>
+                    <li><a href="#">电器城</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <div class="register">
-        <h2>用户注册</h2>
-        <form id="registerForm" action="register.php">
-                <p>用户名:<input type="text" name="username"></p>
-                <p>密码:<input id="password" type="text" name="password"></p>
-                <p>确认密码:<input type="text" name="checkpassword"></p>
-                <p>电话号码:<input type="text" name="tel"></p>
-                <p>验证码:<input type="text" name=""></p>
-                <p><input type="submit" value="立即注册" name=""></p>
-        </form>
+    <div class="container" style="height: 500px;">
+        <button class="btn">提交订单</button>
     </div>
 
     <!-- 11.尾部 -->
@@ -129,9 +136,23 @@
         </div>
     </div>
 
+    <div class="model">
+        <div class="content"><span class="close">x</span></div>
+    </div>
+
     <script src="../js/jquery-1.11.0.js"></script>
-    <script src="../js/jquery.validate.min.js"></script>
-    <script src="../js/register.js"></script>
+    <script>
+        $(function(){
+            //打开模态框
+            $('.btn').click(function(){
+                $('.model').fadeIn()
+            })
+            //关闭模态框
+            $('.close').click(function(){
+                $('.model').fadeOut()
+            })
+        })
+    </script>
 </body>
 
 </html>
