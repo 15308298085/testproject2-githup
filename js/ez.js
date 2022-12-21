@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
     $(".ez-banner").tyslide({
         boxh: 500,//盒子的高度
         w: 1200,//盒子的宽度
@@ -17,7 +17,7 @@ $(function(){
     // 默认隐藏后两个轮播
     $('.ez-banner:gt(0)').hide()
     // 给导航绑定事件
-    $('.ez-title ul li').on('mouseenter',function(){
+    $('.ez-title ul li').on('mouseenter', function () {
         $(this).addClass('active').siblings().removeClass('active')
         var index = $(this).index()
         $('.ez-banner').eq(index).show().siblings().hide()
@@ -34,13 +34,13 @@ $(function(){
     //     })
     // })
     // 左右滑动
-        var index = 0
-    $('.change').click(function(){
+    var index = 0
+    $('.change').click(function () {
         index++
-        $('.inner-box').stop(true).animate({left:-index * 1200}, function(){
-            if(index === 3){
+        $('.inner-box').stop(true).animate({ left: -index * 1200 }, function () {
+            if (index === 3) {
                 index = 0
-                $('.inner-box').css('left',0)
+                $('.inner-box').css('left', 0)
             }
         })
     })

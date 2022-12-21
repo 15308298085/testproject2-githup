@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="阿里fonts/iconfont.css">
+    <style>
+        .on {
+            font-size: 50px;
+            color: gold;
+        }
+        .half {
+            font-size: 50px;
+            color: gold;
+        }
+        .off {
+            font-size: 50px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/starRate.js"></script>
+    <script>
+        $(function(){
+            var star = createStarRate(3.7)
+            $('.box').html(star)
+            //扩展
+            // $('.box').createStarRate(4)
+        })
+    </script>
+</body>
+</html>
